@@ -1,0 +1,56 @@
+@use "../abstracts/mixins";
+
+.main__portfolio {
+  padding: 2rem 5%;
+  grid-column: 1/-1;
+
+  @include mixins.mq(medium) {
+    padding: 4rem 10%;
+  }
+
+  &--title {
+    margin-bottom: 2rem;
+
+    @include mixins.mq(medium) {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &--img-container {
+    display: flex;
+    margin-top: 2rem;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    @include mixins.mq(large) {
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+  }
+
+  & img {
+    //width: 80vw;
+    height: 12rem;
+    object-fit: scale-down;
+
+    @include mixins.mq(medium) {
+      height: 16rem;
+    }
+    @include mixins.mq(large) {
+      height: 22rem;
+    }
+  }
+  & span {
+    margin-top: 1rem;
+    display: inline-block;
+  }
+}
+
+.splide {
+  margin-top: 2rem;
+}
+
+.splide__arrow {
+  background: #fff;
+}

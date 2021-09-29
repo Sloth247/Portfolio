@@ -1,0 +1,56 @@
+@use "../abstracts/mixins";
+
+.footer {
+  padding-top: 2rem;
+  background-image: url("../../img/World\ Map\ Background.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__inner {
+    padding: 10%;
+    max-width: 20rem;
+    background-color: #fff;
+    border-radius: 3.5px;
+    margin: 0 auto;
+    text-align: center;
+
+    @include mixins.mq(medium) {
+      max-width: 25rem;
+      padding: 5% 10%;
+    }
+    @include mixins.mq(large) {
+      padding: 5% 15%;
+      max-width: 40rem;
+    }
+  }
+  &__title {
+    margin-bottom: 1.5rem;
+  }
+  &__item {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+
+    &--img-linkedin {
+      width: 1rem;
+      filter: grayscale(1);
+    }
+    &--img-email {
+      color: gray;
+    }
+  }
+  &__copyrights {
+    margin-top: 2rem;
+    text-align: center;
+    background-color: #023e8a;
+    color: #fff;
+    font-size: 0.8rem;
+  }
+}
+
+.portfolio-copyright {
+  text-align: center;
+  color: white;
+}
