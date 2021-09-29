@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YUKO HORITA | Portfolio</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jura:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/@splidejs/splide/dist/css/splide.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav wrapper">
+        <h1 class="header__nav--logo" aria-label="Yuko Horita Logo">
+          <a href="index-ja.html"> Yuko Horita</a>
+        </h1>
+        <div class="header__nav--menu-container">
+          <div class="header__icon-container">
+            <button
+              class="header__nav--language-icon"
+              aria-label="Select Language"
+              aria-expanded="false"
+              aria-controls="language-menu"
+            >
+              <i
+                class="fas fa-globe header__nav--language-img"
+                aria-hidden="true"
+              ></i>
+            </button>
+
+            <button
+              class="hamburger-mobile-icon"
+              aria-label="Open Mobile Menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <span aria-hidden="true"></span>
+            </button>
+            <ul class="header__nav--language-modal" id="language-menu">
+              <li><a href="crowdfunding-page.html">English</a></li>
+              <li><a href="crowdfunding-page-ja.html">Japanese</a></li>
+            </ul>
+          </div>
+
+          <ul class="header__nav--menus" id="mobile-menu">
+            <li class="header__nav--home">
+              <a href="index-ja.html" class="header__nav--link">Home</a>
+            </li>
+            <li class="header__nav--about">
+              <a href="index-ja.html#about" class="header__nav--link">About Me</a>
+            </li>
+            <li class="header__nav--skills">
+              <a href="index-ja.html#skills" class="header__nav--link">Skills</a>
+            </li>
+            <li class="header__nav--portfolio">
+              <a href="index-ja.html#portfolio" class="header__nav--link">Portfolio</a>
+            </li>
+            <li class="header__nav--contact"><a href="index-ja.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="nav-overlay"></div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div class="main__details wrapper" >
+        <div class="main__details--inner">
+          <h2 class="main__details--title">クラウドファンディング製品のサイト</h2>
+          <p class="main__details--description">
+            インタラクティブな架空のクラウドファンディングサイトです。デザイン及びコンセプトは、デザインカンプサイトである<a href="https://www.frontendmentor.io/" class="fem-link">Frontend Mentor</a>から頂きました。HTML、CSS及びJavaScriptを使用して作成しています。製品購入完了に至るまでの様々なポップアップ及びインタラクティブな要素が楽しめます。
+          </p>
+          <div class="main__details--btn-container">
+            <a href="https://crowdfunding-product-page-junior.vercel.app/" class="btn btn-livesite" target="_blank">サイトリンク</a>
+            <a href="https://github.com/Sloth247/crowdfunding-product-page-junior" class="btn btn-github" target="_blank">GitHubレポ</a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="main__image-gallery wrapper">
+        <img src="img/crowdfunding_project.png" alt="" class="crowd-img-1">
+        <img src="img/crowdfunding_project_mobile.png" alt="" class="crowd-img-2">
+        <img src="img/crowdfunding_project_mobile_reward_modal.png" alt="" class="crowd-img-3">
+        <img src="img/crowdfunding_project_mobile_success_modal.png" alt="" class="crowd-img-4">
+      </div>
+
+    </main>
+  
+
+    <footer class="footer wrapper" id="contact">
+      <p class="portfolio-copyright>&copy;Yuko Horita</p>
+    </footer>
+
+    <script src="src/script.js"></script>
+  </body>
+</html>

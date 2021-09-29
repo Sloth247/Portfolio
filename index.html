@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YUKO HORITA | Home</title>
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jura:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/@splidejs/splide/dist/css/splide.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav wrapper">
+        <h1 class="header__nav--logo" aria-label="Yuko Horita Logo">
+          <a href="index.html"> Yuko Horita</a>
+        </h1>
+        <div class="header__nav--menu-container">
+          <div class="header__icon-container">
+            <button
+              class="header__nav--language-icon"
+              aria-label="Select Language"
+              aria-expanded="false"
+              aria-controls="language-menu"
+            >
+              <i
+                class="fas fa-globe header__nav--language-img"
+                aria-hidden="true"
+              ></i>
+            </button>
+
+            <button
+              class="hamburger-mobile-icon"
+              aria-label="Open Mobile Menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <span aria-hidden="true"></span>
+            </button>
+            <ul class="header__nav--language-modal" id="language-menu">
+              <li><a href="index.html">English</a></li>
+              <li><a href="index-ja.html">Japanese</a></li>
+            </ul>
+          </div>
+
+          <ul class="header__nav--menus" id="mobile-menu">
+            <li class="header__nav--about">
+              <a href="#about" class="header__nav--link">About Me</a>
+            </li>
+            <li class="header__nav--skills">
+              <a href="#skills" class="header__nav--link">Skills</a>
+            </li>
+            <li class="header__nav--portfolio">
+              <a href="#portfolio" class="header__nav--link">Portfolio</a>
+            </li>
+            <li class="header__nav--contact">
+              <a href="#contact" class="header__nav--link">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-overlay"></div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="main__about wrapper" id="about">
+        <div class="main__about--inner">
+          <h2 class="main__about--title">About Me</h2>
+          <img
+            src="./img/undraw_programmer_imem.svg"
+            alt="A Developer Woman"
+            class="main__about--img"
+          />
+          <p class="main__about--description">
+            Thank you very much for visiting my website. My name is Yuko Horita
+            and I am self-taught Front-end developer. I like improving my skills
+            and have attention to details. I am also a Japanese and English
+            bilingual and have +5 years of translation experience both in Japan
+            and United Kingdom. I always keep in mind that my website is
+            accessible by all users. My strength is flexibility and being eager
+            to achieve client's target.
+          </p>
+        </div>
+      </section>
+
+      <section class="main__skills wrapper" id="skills">
+        <div class="main__skills--inner">
+          <h2>Skills</h2>
+          <div class="main__skills--container">
+            <div class="main__skills--item">
+              <img src="./img/icon-html5_pyatol.svg" alt="CSS3 Logo" />
+              <p>HTML5</p>
+            </div>
+            <div class="main__skills--item">
+              <img src="./img/icon-css3_hhizng.svg" alt="CSS3 Logo" />
+              <p>CSS3</p>
+            </div>
+            <div class="main__skills--item">
+              <img
+                src="./img/icon-javascript_vxwryl.svg"
+                alt="JavaScript Logo"
+              />
+              <p>JavaScript</p>
+            </div>
+            <div class="main__skills--item">
+              <img src="./img/sass_icon.svg" alt="Sass Logo" />
+              <p>Sass</p>
+            </div>
+            <div class="main__skills--item">
+              <img src="./img/icons8-wordpress.svg" alt="WordPress Logo" />
+              <p>WordPress</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__portfolio" id="portfolio">
+        <h2 class="main__portfolio--title">Portfolio</h2>
+        <div id="card-slider" class="splide">
+          <div class="splide__track">
+            <ul class="splide__list main__portfolio--img-container">
+              <li class="splide__slide">
+                <a
+                  href="crowdfunding-page.html"
+                  aria-label="View Crowdfunding Page Project"
+                >
+                  <img
+                    src="./img/crowdfunding_project_trimmed.png"
+                    alt="Crowdfunding Website"
+                    aria-label="View Blog Platform Page Project"
+                  />
+                  <span>Crowdfunding Website</span>
+                </a>
+              </li>
+              <li class="splide__slide">
+                <a
+                  href="blogr-product-page.html"
+                  aria-label="View Blog Platform Page Project"
+                >
+                  <img
+                    src="./img/Blogr_project_trimmed.png"
+                    alt="Blog Platform Website"
+                  />
+                  <span>Blog Platform Landing Page</span>
+                </a>
+              </li>
+              <li class="splide__slide">
+                <a href="baseapparel-comingsoon-page.html">
+                  <img
+                    src="./img/baseapparel-desktop.png"
+                    alt="Blog Platform Website"
+                  />
+                  <span>"Base Apparel" Coming Soon</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contact">
+      <div class="footer__inner">
+        <h2 class="footer__title">Contact</h2>
+        <a href="mailto:xxxx@outlook.com" class="footer__item">
+          <i class="fas fa-envelope footer__item--img-email"></i
+          ><span>XXXX@outlook.com</span>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/yuko-horita-5b597a21b"
+          class="footer__item"
+          target="blank"
+        >
+          <img
+            src="./img/LI-In-Bug.png"
+            alt=""
+            class="footer__item--img-linkedin"
+          /><span>LinkedIn</span></a
+        >
+      </div>
+
+      <p class="footer__copyrights">&copy;Yuko Horita</p>
+    </footer>
+
+    <script src="./dist/main.js"></script>
+  </body>
+</html>
